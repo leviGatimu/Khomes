@@ -1,0 +1,290 @@
+/* /assets/css/style.css */
+
+/* 1. VARIABLES: The Colors of Rwanda */
+:root {
+    --primary: #D35400;      /* Kigali Clay (Orange) */
+    --primary-hover: #e67e22;
+    --secondary: #27AE60;    /* Hills Green */
+    --dark: #2c3e50;         /* Dark Slate */
+    --light: #f8f9fa;        /* Light Grey Backgrounds */
+    --text: #333333;         /* Main Text */
+    --white: #ffffff;
+    --shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* 2. GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light);
+    color: var(--text);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 3. LAYOUT UTILITIES */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    flex: 1; /* Pushes footer to bottom */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 4. NAVIGATION BAR */
+.navbar {
+    background: var(--white);
+    box-shadow: var(--shadow);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary); /* Orange Logo */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    font-weight: 500;
+    color: var(--dark);
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+/* Special Buttons in Menu */
+.btn-highlight {
+    background-color: var(--secondary); /* Green for Host */
+    color: white !important;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.btn-signup {
+    background-color: var(--primary); /* Orange for Signup */
+    color: white !important;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+/* 5. HERO SECTION (Homepage) */
+/* In assets/css/style.css */
+
+.hero-section {
+    /* The logic: 
+       1. First part is a dark shadow (Gradient) so text pops.
+       2. Second part is the URL to your image.
+       3. ../images/ means "Go up one folder, then into images".
+    */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)), url('../images/rwanda-banner.jpg');
+    
+    /* Ensure the image covers the whole box */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Layout & Text */
+    color: white;
+    padding: 120px 20px; /* Taller padding looks more modern */
+    text-align: center;
+    margin-bottom: 40px;
+}
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-section input {
+    padding: 15px;
+    width: 300px;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+}
+
+.hero-section button {
+    padding: 15px 30px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.hero-section button:hover {
+    background-color: var(--primary-hover);
+}
+
+/* 6. PROPERTY CARDS (The Grid) */
+.property-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.property-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.property-card:hover {
+    transform: translateY(-5px); /* Lift effect */
+}
+
+.property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.p-details {
+    padding: 20px;
+}
+
+.p-details h3 {
+    margin-bottom: 10px;
+    color: var(--dark);
+}
+
+.price {
+    color: var(--secondary); /* Green Price */
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    display: block;
+}
+
+.btn-view {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: var(--dark);
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn-view:hover {
+    background: var(--primary);
+}
+
+/* 7. FOOTER (Multi-column) */
+.site-footer {
+    background-color: #f7f7f7;
+    padding-top: 60px;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+.footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-col h3 { color: var(--primary); margin-bottom: 15px; }
+.footer-col h4 { color: var(--dark); margin-bottom: 15px; }
+
+.footer-col ul li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.footer-col ul li a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    color: #777;
+}
+
+/* 8. MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* We will add a JS toggle later */
+    }
+    
+    .hero-section h1 { font-size: 2rem; }
+    
+    .hero-section input { width: 60%; }
+    
+    .footer-grid {
+        flex-direction: column;
+    }
+    /* Add this to style.css */
+.btn-logout {
+    border: 1px solid #c0392b;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.btn-logout:hover {
+    background: #c0392b;
+    color: white !important;
+}
+/* The Orange Verified Badge */
+.verified-badge {
+    color: #e67e22; /* Your Main Orange */
+    font-size: 0.9em;
+    margin-left: 4px;
+    display: inline-block;
+    vertical-align: middle;
+}
+}
