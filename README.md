@@ -7,6 +7,17 @@
 **Khomes.rw** is a high-performance real estate and rental platform designed for the Rwandan market. It connects guests looking for homes, apartments, or commercial spaces with trusted local hosts.
 
 ---
+### Project images
+
+<img width="1916" height="820" alt="image" src="https://github.com/user-attachments/assets/a5b1fc9f-36ea-4ce0-8148-3457658a4600" />
+<img width="1910" height="901" alt="image" src="https://github.com/user-attachments/assets/b444cc76-e7a4-4245-977c-08dd144a62d8" />
+<img width="1915" height="902" alt="image" src="https://github.com/user-attachments/assets/2306644a-c13c-4ae0-b3a9-ecd978eaa228" />
+<img width="1899" height="908" alt="image" src="https://github.com/user-attachments/assets/bde2a22f-16d9-4c61-9056-5ac437d30135" />
+
+
+
+
+
 
 ## ✨ Key Features
 
@@ -35,7 +46,7 @@ To run this project locally, you will need:
 - A **Google Maps API Key** (with Maps JS, Places, and Geolocation APIs enabled)
 
 ### Installation
-Database Setup
+### **Database Setup**
 
 Open PHPMyAdmin.
 
@@ -55,16 +66,16 @@ Move the folder to your htdocs directory.
 
 Open your browser and go to http://localhost/Khomes.
 
-🛠️ Tech Stack
+### **🛠️ Tech Stack**
 Backend: PHP (PDO for secure database interaction)
 
 Frontend: HTML5, CSS3 (Custom Grid & Flexbox), JavaScript (Vanilla/AJAX)
 
-Database: MySQL
+### **Database: MySQL**
 
 APIs: Google Maps Platform, Google Places API (New)
 
-🚩 Project Status
+### **🚩 Project Status**
 Currently in Active Development. Upcoming features include:
 
 [ ] Momo (Mobile Money) payment integration
@@ -73,15 +84,9 @@ Currently in Active Development. Upcoming features include:
 
 [ ] Advanced User Verification badges
 
-📄 License
+### **📄 License**
 This project is for educational purposes as part of the Khomes.rw development journey.
 
 Developed with passion for the Rwandan rental market.
 
 
-### Pro-Tips for your GitHub:
-1. **Screenshots**: GitHub users love visuals. Create a folder named `screenshots` in your project and add a few images of your Homepage and Admin Dashboard. You can then add them to the README using `![Alt Text](screenshots/home.png)`.
-2. **The SQL File**: Don't forget to export your current database from PHPMyAdmin and include it i
-1. **Clone the repository**
-   ```bash
-   git clone [https://github.com/yourusername/Khomes.git](https://github.com/yourusername/Khomes.git)
