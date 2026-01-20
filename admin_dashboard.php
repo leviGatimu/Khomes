@@ -92,6 +92,7 @@ include 'includes/header.php';
         <h3>System Quick Actions</h3>
         <div style="display: flex; gap: 15px; margin-top: 20px;">
             <a href="add_property.php" class="btn-highlight" style="text-decoration: none;">Add Official Listing</a>
+            
             <a href="generate_reviews.php" style="color: white; text-decoration: underline; font-size: 0.9rem; opacity: 0.8;">Run Review Generator</a>
         </div>
     </div>
