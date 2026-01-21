@@ -43,10 +43,14 @@ $my_properties = $stmt->fetchAll();
             <i class="fas fa-plus"></i> List New Property
         </a>
     </div>
+    <a href="add_property_map.php">
+        <h3 style="margin-top: 0; color: var(--dark-blue);"><i class="fas fa-bell"></i> Map</h3>
+    </a>
 
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px;">
         <div style="background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid var(--primary-orange);">
             <h3 style="margin-top: 0; color: var(--dark-blue);"><i class="fas fa-bell"></i> Recent Alerts</h3>
+            
             <?php if(count($notifications) > 0): ?>
                 <ul style="list-style: none; padding: 0; margin: 0;">
                     <?php foreach($notifications as $n): ?>
